@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Cards</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #00000000;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .movie-container {
+            width: 700px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* CARD */
+
+        .movie-card {
+            background: rgb(0, 231, 243);
+            border-radius: 10px;
+            overflow: hidden;
+
+            cursor: pointer;
+
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+
+            /* HOVER TRANSITION */
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        /* MOUSE CARD KE UPAR */
+
+        .movie-card:hover {
+            transform: translateY(-25px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* IMAGE */
+
+        .movie-card img {
+            width: 100%;
+            height: 230px;
+
+            object-fit: cover;
+            display: block;
+        }
+
+        /* NAME */
+
+        .movie-card h2 {
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+
+        /* PAGE LOAD ANIMATION */
+
+        .movie-card {
+            opacity: 0;
+            animation: fadeIn 0.7s ease forwards;
+        }
+
+        .movie-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .movie-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .movie-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .movie-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .movie-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .movie-card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeIn {
+
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="movie-container">
+
+
+        <!-- 1 HANUMAN ANSH -->
+
+        <div class="movie-card">
+
+            <img
+                src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hanuman-ansh-et00507738-1787130927.jpg"
+                alt="Hanuman Ansh">
+
+            <h2>Hanuman Ansh</h2>
+
+        </div>
+
+
+        <!-- 2 MIRZAPUR -->
+
+        <div class="movie-card">
+
+            <img
+                src="https://media5.bollywoodhungama.in/wp-content/uploads/2024/10/Mirzapur001-306x393.jpg"
+                alt="Mirzapur">
+
+            <h2>Mirzapur</h2>
+
+        </div>
+
+
+        <!-- 3 AWARAPAN 2 -->
+
+        <div class="movie-card">
+
+            <img
+                src="https://stat5.bollywoodhungama.in/wp-content/uploads/2025/03/Awarapan-2-306x393.jpg"
+                alt="Awarapan 2">
+
+            <h2>Awarapan 2</h2>
+
+        </div>
+
+
+        <!-- 4 HANUMAN ANSH -->
+
+        <div class="movie-card">
+
+            <img
+                src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hanuman-ansh-et00507738-1787130927.jpg"
+                alt="Hanuman Ansh">
+
+            <h2>Hanuman Ansh</h2>
+
+        </div>
+
+
+        <!-- 5 HANUMAN ANSH -->
+
+        <div class="movie-card">
+
+            <img
+                src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hanuman-ansh-et00507738-1787130927.jpg"
+                alt="Hanuman Ansh">
+
+            <h2>Hanuman Ansh</h2>
+
+        </div>
+
+
+        <!-- 6 HANUMAN ANSH -->
+
+        <div class="movie-card">
+
+            <img
+                src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hanuman-ansh-et00507738-1787130927.jpg"
+                alt="Hanuman Ansh">
+
+            <h2>Hanuman Ansh</h2>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+
